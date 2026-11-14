@@ -1,0 +1,69 @@
+# Jun-paper-tracker 설정 (arXiv 논문 트래커)
+# - 주제를 추가/수정하려면 [[topics]] 블록을 고치면 됩니다.
+# - phrases: 제목(ti) 또는 초록(abs)에 이 구문이 들어간 논문을 찾습니다 (OR 조건).
+# - categories: arXiv 분류 제한 (OR 조건). 비우면 전체 분류에서 찾습니다.
+# - exclude: 제목/초록에 이 구문이 있으면 제외합니다.
+
+[settings]
+initial_days = 14            # 주제에 저장된 논문이 없을 때 처음 거슬러 올라갈 일수
+overlap_days = 5             # 마지막 수집 논문 날짜보다 며칠 더 앞부터 다시 훑을지 (arXiv 공개 지연 대비)
+page_size = 100              # arXiv API 한 번에 받을 개수
+max_pages_per_topic = 10     # 주제당 최대 페이지 수 (100 x 10 = 1000편)
+request_delay_seconds = 3.5  # arXiv 요청 간격 (arXiv 권장: 3초 이상)
+readme_latest = 15           # README에 주제별로 보여줄 최신 논문 수
+code_check_ages = [1, 3, 7, 14, 30, 60]  # 제출 후 이 일수가 된 날, 코드 링크가 없으면 Hugging Face에서 다시 확인
+code_check_max = 800         # 한 번 실행에서 코드 링크 확인 최대 건수
+hf_delay_seconds = 0.3       # Hugging Face 요청 간격
+timezone_offset_hours = 9    # 표시 시각 (9 = KST)
+
+[[topics]]
+name = "3D Gaussian Splatting"
+slug = "3d-gaussian-splatting"
+phrases = ["gaussian splatting", "3DGS"]
+categories = ["cs.CV", "cs.GR", "cs.RO", "cs.LG"]
+exclude = []
+
+[[topics]]
+name = "Visual Localization"
+slug = "visual-localization"
+phrases = [
+  "visual localization", "camera localization", "camera relocalization",
+  "camera re-localization", "image-based localization", "visual place recognition",
+  "absolute pose regression", "scene coordinate regression",
+]
+categories = ["cs.CV", "cs.RO"]
+exclude = []
+
+[[topics]]
+name = "SLAM"
+slug = "slam"
+phrases = [
+  "SLAM", "simultaneous localization and mapping",
+  "visual odometry", "visual-inertial odometry",
+]
+categories = ["cs.CV", "cs.RO"]
+exclude = []
+
+[[topics]]
+name = "Keypoint Detection"
+slug = "keypoint-detection"
+phrases = [
+  "keypoint detection", "keypoint detector", "keypoint description",
+  "interest point detection", "interest point detector",
+  "local feature detection", "local feature matching", "keypoint matching",
+  "feature point detection", "local descriptor",
+]
+categories = ["cs.CV", "cs.RO"]
+# 사람 자세(관절) 키포인트 논문 제외. 필요하면 지우세요.
+exclude = ["human pose", "facial landmark"]
+
+[[topics]]
+name = "Image Motion Target Tracking"
+slug = "image-motion-target-tracking"
+phrases = [
+  "object tracking", "multi-object tracking", "multiple object tracking",
+  "single object tracking", "visual tracking", "target tracking",
+  "multi-target tracking", "moving object tracking", "moving target tracking",
+]
+categories = ["cs.CV", "cs.RO", "eess.IV"]
+exclude = []
