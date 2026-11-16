@@ -1,14 +1,14 @@
 # Jun-paper-tracker
 
-> 마지막 데이터 변경: 2026-11-14 21:12 (UTC+9) · arXiv 최신 논문을 매일 자동 수집합니다.
+> 마지막 데이터 변경: 2026-11-16 19:56 (UTC+9) · arXiv 최신 논문을 매일 자동 수집합니다.
 
 |주제|전체|최근 7일|코드 공개|
 |---|---:|---:|---:|
-|[3D Gaussian Splatting](#3d-gaussian-splatting)|55|18|8 (14%)|
+|[3D Gaussian Splatting](#3d-gaussian-splatting)|57|18|8 (14%)|
 |[Visual Localization](#visual-localization)|10|0|1 (10%)|
-|[SLAM](#slam)|23|8|2 (8%)|
-|[Keypoint Detection](#keypoint-detection)|6|0|1 (16%)|
-|[Image Motion Target Tracking](#image-motion-target-tracking)|9|1|2 (22%)|
+|[SLAM](#slam)|23|7|2 (8%)|
+|[Keypoint Detection](#keypoint-detection)|7|1|2 (28%)|
+|[Image Motion Target Tracking](#image-motion-target-tracking)|10|2|2 (20%)|
 
 ## 3D Gaussian Splatting
 
@@ -16,6 +16,8 @@
 
 |제출일|제목|저자|arXiv|코드|
 |---|---|---|---|---|
+|2026-11-13|**MacroGS: Macro-Pixel Shared Gaussian Primitives for Arbitrary-Scale Light Field Super-Resolutio**|Zeqiang Wei 외|[2611.17957](https://arxiv.org/abs/2611.17957)|-|
+|2026-11-13|**Stage-wise Lineage-aware Dropout for Sparse-View 3D Gaussian Splatting**|Yan Xing 외|[2611.17752](https://arxiv.org/abs/2611.17752)|-|
 |2026-11-12|**Kosmo-GFM: A Production-Ready Geometry Foundation Model**|Sheng Tang 외|[2611.16840](https://arxiv.org/abs/2611.16840)|[page](https://kosmoresearch.github.io/Kosmo-GFM/)|
 |2026-11-12|**Reconstruct What You Can: Distractor-free 4D Gaussian Splatting**|Joel Julin 외|[2611.16259](https://arxiv.org/abs/2611.16259)|-|
 |2026-11-11|**Topology-Aware 4D Gaussian Splatting for Egocentric Videos**|Leonardo Vanni 외|[2611.16012](https://arxiv.org/abs/2611.16012)|[page](https://topoego.github.io)|
@@ -29,8 +31,6 @@
 |2026-11-09|**RetinexGS: Retinex-Inspired Gaussian Splatting for Low-Light RAW Reconstruction**|Yulang Fei 외|[2611.13280](https://arxiv.org/abs/2611.13280)|-|
 |2026-11-09|**Plant Orbiter: 3D Plant Reconstruction and Generation with Video Diffusion Orbit Cameras and 3D Gaussian Splatting**|Zane K. J. Hartley 외|[2611.12739](https://arxiv.org/abs/2611.12739)|-|
 |2026-11-09|**Spaghetti Splatting: Differentiating Curvilinear Dirac Masses via Convolution**|George Shramko 외|[2611.12716](https://arxiv.org/abs/2611.12716)|-|
-|2026-11-09|**Mitigating SM-Level Load Imbalance in 3D Gaussian Splatting on GPUs**|Junha Ryu 외|[2611.12319](https://arxiv.org/abs/2611.12319)|-|
-|2026-11-09|**DPGS-SLAM: Diffusion-Prior and Provenance-Aware Monocular Gaussian Splatting SLAM for Dynamic Visual Sensing**|Yifan Luo 외|[2611.12038](https://arxiv.org/abs/2611.12038)|-|
 
 ## Visual Localization
 
@@ -73,10 +73,11 @@
 
 ## Keypoint Detection
 
-최근 6편 · [전체 목록 →](lists/keypoint-detection/README.md)
+최근 7편 · [전체 목록 →](lists/keypoint-detection/README.md)
 
 |제출일|제목|저자|arXiv|코드|
 |---|---|---|---|---|
+|2026-11-13|**ALoMa: Affine Correspondences Beyond Patches**|David Nordström 외|[2611.18170](https://arxiv.org/abs/2611.18170)|[code](https://github.com/davnords/loma)|
 |2026-11-06|**DAC-MACE: Context-Conditioned Expert Routing for Compact Scene Coordinate Regression in Camera Relocalization**|Dingying Fan 외|[2611.10263](https://arxiv.org/abs/2611.10263)|-|
 |2026-11-06|**OfficeTwin: Realizing 3D Reconstruction of Redundant Scenes through Partial Viewpoint Perception**|Quanyun Wu 외|[2611.10241](https://arxiv.org/abs/2611.10241)|-|
 |2026-11-06|**Direct Regression and Geometric Recovery for Event-based Spacecraft Pose Estimation**|Pruthvi Nandan Janga 외|[2611.09717](https://arxiv.org/abs/2611.09717)|-|
@@ -86,10 +87,11 @@
 
 ## Image Motion Target Tracking
 
-최근 9편 · [전체 목록 →](lists/image-motion-target-tracking/README.md)
+최근 10편 · [전체 목록 →](lists/image-motion-target-tracking/README.md)
 
 |제출일|제목|저자|arXiv|코드|
 |---|---|---|---|---|
+|2026-11-12|**Adversarial Tracking: Attacks on Image Sensors for Object Tracking in Autonomous Vehicles**|Han Wu 외|[2611.17505](https://arxiv.org/abs/2611.17505)|-|
 |2026-11-11|**Test-Time Selective Adaptation for Cross-Modal UAV Object Tracking with Token Shift**|Yun Xiao 외|[2611.15059](https://arxiv.org/abs/2611.15059)|-|
 |2026-11-07|**RefineSplat: Reconstruction-Guided Object-Centric Gaussian Splatting for Open-Vocabulary Querying**|Yiren Lu 외|[2611.10379](https://arxiv.org/abs/2611.10379)|-|
 |2026-11-06|**Semantic Extraction Framework for Goal-Oriented V2X Communication Supporting Safe Intersection Passage**|Haoran Yang 외|[2611.09118](https://arxiv.org/abs/2611.09118)|-|
