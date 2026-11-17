@@ -1,14 +1,14 @@
 # Jun-paper-tracker
 
-> 마지막 데이터 변경: 2026-11-16 19:56 (UTC+9) · arXiv 최신 논문을 매일 자동 수집합니다.
+> 마지막 데이터 변경: 2026-11-17 20:41 (UTC+9) · arXiv 최신 논문을 매일 자동 수집합니다.
 
 |주제|전체|최근 7일|코드 공개|
 |---|---:|---:|---:|
-|[3D Gaussian Splatting](#3d-gaussian-splatting)|57|18|8 (14%)|
+|[3D Gaussian Splatting](#3d-gaussian-splatting)|65|20|9 (13%)|
 |[Visual Localization](#visual-localization)|10|0|1 (10%)|
-|[SLAM](#slam)|23|7|2 (8%)|
+|[SLAM](#slam)|31|12|3 (9%)|
 |[Keypoint Detection](#keypoint-detection)|7|1|2 (28%)|
-|[Image Motion Target Tracking](#image-motion-target-tracking)|10|2|2 (20%)|
+|[Image Motion Target Tracking](#image-motion-target-tracking)|13|5|2 (15%)|
 
 ## 3D Gaussian Splatting
 
@@ -16,6 +16,14 @@
 
 |제출일|제목|저자|arXiv|코드|
 |---|---|---|---|---|
+|2026-11-16|**The Mask Is Not the Object: Volumetric Supervision for 3D Gaussian Segmentation**|Jeonghwan Cho 외|[2611.21383](https://arxiv.org/abs/2611.21383)|[page](https://jhxcho.github.io/voda/)|
+|2026-11-16|**QuantileGS: Quantile-Based Conformal Bounds on RGB Rendering Errors for Novel View Synthesis with 3D Gaussian Splatting**|Haiyang Xu 외|[2611.21253](https://arxiv.org/abs/2611.21253)|-|
+|2026-11-16|**A Gaussian Primitive Data Management Framework for Efficient 3DGS Trajectory Rendering**|Haolun Ma 외|[2611.20546](https://arxiv.org/abs/2611.20546)|-|
+|2026-11-16|**ReScene: Incremental Scene Chronology from Sparse Revisits**|Wei Qin Chuah 외|[2611.20433](https://arxiv.org/abs/2611.20433)|[page](https://waychin-weiqin.github.io/ReScene/)|
+|2026-11-15|**CiGS: Conduction in Gaussian Splats for Interior Temperature Field from Thermal Images**|Liu Zhenyuan 외|[2611.20283](https://arxiv.org/abs/2611.20283)|-|
+|2026-11-15|**See the Lives of Stars in a Handful of Light**|Shuhong Liu 외|[2611.20089](https://arxiv.org/abs/2611.20089)|-|
+|2026-11-15|**SemLite-GS: Semantic-Selective Parallel Gaussian Splatting for Lightweight Building Reconstruction from UAV Oblique Imagery**|Tengfei Wang 외|[2611.19773](https://arxiv.org/abs/2611.19773)|[code](https://github.com/IRIS-LAB-whu/SemLite-GS)|
+|2026-11-14|**Prepare Lighter and Faster for Open-Vocabulary Queries: A Query-Wise 3D Segmenter for Gaussian Splatting**|Nhat-Quynh Le-Pham 외|[2611.19429](https://arxiv.org/abs/2611.19429)|-|
 |2026-11-13|**MacroGS: Macro-Pixel Shared Gaussian Primitives for Arbitrary-Scale Light Field Super-Resolutio**|Zeqiang Wei 외|[2611.17957](https://arxiv.org/abs/2611.17957)|-|
 |2026-11-13|**Stage-wise Lineage-aware Dropout for Sparse-View 3D Gaussian Splatting**|Yan Xing 외|[2611.17752](https://arxiv.org/abs/2611.17752)|-|
 |2026-11-12|**Kosmo-GFM: A Production-Ready Geometry Foundation Model**|Sheng Tang 외|[2611.16840](https://arxiv.org/abs/2611.16840)|[page](https://kosmoresearch.github.io/Kosmo-GFM/)|
@@ -23,14 +31,6 @@
 |2026-11-11|**Topology-Aware 4D Gaussian Splatting for Egocentric Videos**|Leonardo Vanni 외|[2611.16012](https://arxiv.org/abs/2611.16012)|[page](https://topoego.github.io)|
 |2026-11-11|**ThermalSplat: Generalizable Pose-Free Gaussian Splatting for Sparse-View Thermal 3D Reconstruction**|Prasanna S 외|[2611.15435](https://arxiv.org/abs/2611.15435)|-|
 |2026-11-11|**MatrixSplat: Matrix-Parallel and Feature-Scalable 3D Gaussian Splatting Rendering on GPUs**|Yangming Zhang 외|[2611.15153](https://arxiv.org/abs/2611.15153)|-|
-|2026-11-10|**FastWild-GS: Minutes-Scale In-the-Wild Gaussian Splatting via Compact Per-Image Appearance Adaptation**|Donghun Ryu 외|[2611.13808](https://arxiv.org/abs/2611.13808)|-|
-|2026-11-10|**Marrying Capacity and Precision for Efficient 2D Gaussian Image Representation**|Lin Dong 외|[2611.13784](https://arxiv.org/abs/2611.13784)|-|
-|2026-11-10|**RF3DGS: Reflection-Free 3D Gaussian Splatting with Self-Priors**|Qiang Wen 외|[2611.13772](https://arxiv.org/abs/2611.13772)|-|
-|2026-11-10|**DepthGS: Depth-Guided Gaussian Splatting with Adaptive Regularization for High-Quality Surface Reconstruction**|Xiao Ren 외|[2611.13628](https://arxiv.org/abs/2611.13628)|-|
-|2026-11-10|**GEMOR-GS: Global Extrinsic-calibration-refined Mapping and Online Relocalization for 3D Gaussian-Splatting SLAM**|Yuchen Yang 외|[2611.13528](https://arxiv.org/abs/2611.13528)|-|
-|2026-11-09|**RetinexGS: Retinex-Inspired Gaussian Splatting for Low-Light RAW Reconstruction**|Yulang Fei 외|[2611.13280](https://arxiv.org/abs/2611.13280)|-|
-|2026-11-09|**Plant Orbiter: 3D Plant Reconstruction and Generation with Video Diffusion Orbit Cameras and 3D Gaussian Splatting**|Zane K. J. Hartley 외|[2611.12739](https://arxiv.org/abs/2611.12739)|-|
-|2026-11-09|**Spaghetti Splatting: Differentiating Curvilinear Dirac Masses via Convolution**|George Shramko 외|[2611.12716](https://arxiv.org/abs/2611.12716)|-|
 
 ## Visual Localization
 
@@ -55,6 +55,14 @@
 
 |제출일|제목|저자|arXiv|코드|
 |---|---|---|---|---|
+|2026-11-16|**QuantileGS: Quantile-Based Conformal Bounds on RGB Rendering Errors for Novel View Synthesis with 3D Gaussian Splatting**|Haiyang Xu 외|[2611.21253](https://arxiv.org/abs/2611.21253)|-|
+|2026-11-16|**Polygraph: Large-Scale Multi-Session Trajectory Optimization using Pose Graphs**|Petar Lukovic 외|[2611.21163](https://arxiv.org/abs/2611.21163)|-|
+|2026-11-16|**WinDEX: Metric 3D Hand Motion Reconstruction in the Wild for Dexterous Teleoperation and Policy Learning**|Hongyu Ma 외|[2611.21143](https://arxiv.org/abs/2611.21143)|[page](https://fruitrabbit.github.io/WinDEX/)|
+|2026-11-16|**OrthoMark: Place Recognition with Point-Anchored Orthographic Height Mark**|Haichuan Li|[2611.20570](https://arxiv.org/abs/2611.20570)|-|
+|2026-11-16|**sqrtVINS-Based 360 Visual-Inertial SLAM Systems: Hilti-Trimble SLAM Challenge 2026 Entry**|Jungwoo Lee 외|[2611.20568](https://arxiv.org/abs/2611.20568)|-|
+|2026-11-15|**A Geometric Observer for Visual-Inertial Odometry using Optical-Flow Constraints**|Tarek Bouazza 외|[2611.20098](https://arxiv.org/abs/2611.20098)|-|
+|2026-11-15|**M-CROSS: A Multisensor Simulation Dataset for SLAM across Water--Land Transitions**|Yan Dong 외|[2611.19765](https://arxiv.org/abs/2611.19765)|-|
+|2026-11-14|**DEFDVO: Deformable Deep Visual Odometry for Equirectangular Images**|Burak Sevsay 외|[2611.19095](https://arxiv.org/abs/2611.19095)|[code](https://github.com/BurakSevsay/DEFDVO)|
 |2026-11-12|**RGB-D SLAM on the Edge: Benchmarking and Profiling RTAB-Map and ORB-SLAM3 on the Raspberry Pi 5**|Himanshu Patil 외|[2611.16472](https://arxiv.org/abs/2611.16472)|-|
 |2026-11-11|**IncR-3DSGG: Incremental Posed RGB Image Based 3D Scene Graph Generation via Privileged Depth Supervision**|Mrunmai Phatak 외|[2611.15429](https://arxiv.org/abs/2611.15429)|-|
 |2026-11-10|**NIF-VIO: Visual--Inertial Odometry Across Inertial and Non-Inertial Reference Frames**|Zichao Shu 외|[2611.13662](https://arxiv.org/abs/2611.13662)|-|
@@ -62,14 +70,6 @@
 |2026-11-09|**V3DSAM: Semantic-Geometric Loop Verification and Geometry-Anchored Persistent Instance Mapping for Feed-Forward Dense SLAM**|Maolin Ye 외|[2611.12452](https://arxiv.org/abs/2611.12452)|-|
 |2026-11-09|**DPGS-SLAM: Diffusion-Prior and Provenance-Aware Monocular Gaussian Splatting SLAM for Dynamic Visual Sensing**|Yifan Luo 외|[2611.12038](https://arxiv.org/abs/2611.12038)|-|
 |2026-11-09|**Scale-Consistent Monocular Fisheye Visual Odometry via Spherical Bundle Adjustment-Guided Unsupervised Depth Learning**|Wanhui Luo 외|[2611.11934](https://arxiv.org/abs/2611.11934)|-|
-|2026-11-08|**Map2SLAM: From Streaming Map Prediction to Real-Time SLAM**|Jian Gao 외|[2611.11169](https://arxiv.org/abs/2611.11169)|[page](https://robbyant-research.github.io/Map2SLAM/)|
-|2026-11-06|**Maze Runner: Autonomous Maze Navigation with Line-Based Localization and Control Barrier Functions**|Alvaro J. Gaona 외|[2611.12949](https://arxiv.org/abs/2611.12949)|[code](https://github.com/alvgaona/maze-runner)|
-|2026-11-06|**DASH-SLAM: Calibration-Free Metric Monocular SLAM via Depth Scale Propagation**|Otavio Ribas 외|[2611.10239](https://arxiv.org/abs/2611.10239)|-|
-|2026-11-05|**An Integrated Open-Source Stack for Vision-Based Autonomous Navigation of Wheeled Rovers**|Iaroslav Kolomiets 외|[2611.08100](https://arxiv.org/abs/2611.08100)|-|
-|2026-11-05|**Not Losing Your Way: Mitigating Visual-Inertial Odometry Drift through On-Demand Visual Feature Creation**|Simone D'Angelo 외|[2611.07687](https://arxiv.org/abs/2611.07687)|-|
-|2026-11-05|**FREE-LIVO: Physically Decoupled Yet Tightly Coupled LiDAR-Inertial-Visual Odometry**|Reon Tabata 외|[2611.07463](https://arxiv.org/abs/2611.07463)|-|
-|2026-11-04|**Scale Anchoring via Implicit Semantics and Sequence-Consistent Loop Closure for VGGT-Based SLAM**|Ziyi Jin 외|[2611.06308](https://arxiv.org/abs/2611.06308)|-|
-|2026-11-04|**Reflection-Robust Stereo Visual-Inertial Odometry via Kalman-Filtered Ground-Height Estimation**|Uihyun Hwang 외|[2611.05938](https://arxiv.org/abs/2611.05938)|-|
 
 ## Keypoint Detection
 
@@ -87,10 +87,13 @@
 
 ## Image Motion Target Tracking
 
-최근 10편 · [전체 목록 →](lists/image-motion-target-tracking/README.md)
+최근 13편 · [전체 목록 →](lists/image-motion-target-tracking/README.md)
 
 |제출일|제목|저자|arXiv|코드|
 |---|---|---|---|---|
+|2026-11-16|**CLIFT: Contrastive LiDAR Instance Features for 3D Pedestrian Tracking**|German Devchich 외|[2611.20737](https://arxiv.org/abs/2611.20737)|[page](https://hermak56.github.io/CLIFT/)|
+|2026-11-16|**VisDrone-ReID: A Unified Multi-Category Object Re-Identification Benchmark**|Asmau Lawal Bilbis 외|[2611.20372](https://arxiv.org/abs/2611.20372)|-|
+|2026-11-15|**HIVE-ECIA: Identity-Aware Historical Evidence Acquisition for Bandwidth-Efficient Multi-Object Tracking**|Hai Nguyen 외|[2611.19897](https://arxiv.org/abs/2611.19897)|-|
 |2026-11-12|**Adversarial Tracking: Attacks on Image Sensors for Object Tracking in Autonomous Vehicles**|Han Wu 외|[2611.17505](https://arxiv.org/abs/2611.17505)|-|
 |2026-11-11|**Test-Time Selective Adaptation for Cross-Modal UAV Object Tracking with Token Shift**|Yun Xiao 외|[2611.15059](https://arxiv.org/abs/2611.15059)|-|
 |2026-11-07|**RefineSplat: Reconstruction-Guided Object-Centric Gaussian Splatting for Open-Vocabulary Querying**|Yiren Lu 외|[2611.10379](https://arxiv.org/abs/2611.10379)|-|
