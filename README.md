@@ -1,12 +1,12 @@
 # Jun-paper-tracker
 
-> 마지막 데이터 변경: 2026-11-17 20:41 (UTC+9) · arXiv 최신 논문을 매일 자동 수집합니다.
+> 마지막 데이터 변경: 2026-11-18 20:28 (UTC+9) · arXiv 최신 논문을 매일 자동 수집합니다.
 
 |주제|전체|최근 7일|코드 공개|
 |---|---:|---:|---:|
-|[3D Gaussian Splatting](#3d-gaussian-splatting)|65|20|9 (13%)|
-|[Visual Localization](#visual-localization)|10|0|1 (10%)|
-|[SLAM](#slam)|31|12|3 (9%)|
+|[3D Gaussian Splatting](#3d-gaussian-splatting)|71|21|9 (12%)|
+|[Visual Localization](#visual-localization)|12|2|2 (16%)|
+|[SLAM](#slam)|36|15|5 (13%)|
 |[Keypoint Detection](#keypoint-detection)|7|1|2 (28%)|
 |[Image Motion Target Tracking](#image-motion-target-tracking)|13|5|2 (15%)|
 
@@ -16,6 +16,12 @@
 
 |제출일|제목|저자|arXiv|코드|
 |---|---|---|---|---|
+|2026-11-17|**ReTouchGS: Ultralight Render-free Aesthetic Color Enhancement and Transfer for 3D Gaussian Splatting**|Chuanzhi Xu 외|[2611.23054](https://arxiv.org/abs/2611.23054)|-|
+|2026-11-17|**You Only Encode Once: Sub-Pixel-Shifted Frames for Arbitrary-Scale Remote Sensing Super-Resolution with 2D Gaussian Splatting**|Canjie Liu 외|[2611.22898](https://arxiv.org/abs/2611.22898)|-|
+|2026-11-17|**DOOM-GS: Dynamic Out-of-core Optimization for Massive Gaussian Splatting**|Doğa Yılmaz 외|[2611.22805](https://arxiv.org/abs/2611.22805)|-|
+|2026-11-17|**Cross3DGS: Unified Vulkan-Based 3D Gaussian Splatting Training from Workstations to Mobile Devices**|Hiroyuki Sato 외|[2611.22240](https://arxiv.org/abs/2611.22240)|-|
+|2026-11-17|**CoSphere-SLAM: Multi-Agent Panoramic Gaussian Splatting SLAM with Spherical Loop Closure**|Qi Shao 외|[2611.22235](https://arxiv.org/abs/2611.22235)|[page](https://cosphere-slam.github.io)|
+|2026-11-17|**CueSplat: Learning to Schedule Sparse Deformation for Dynamic Gaussian Splatting on Edge Devices**|Qingyuan Tang 외|[2611.22095](https://arxiv.org/abs/2611.22095)|-|
 |2026-11-16|**The Mask Is Not the Object: Volumetric Supervision for 3D Gaussian Segmentation**|Jeonghwan Cho 외|[2611.21383](https://arxiv.org/abs/2611.21383)|[page](https://jhxcho.github.io/voda/)|
 |2026-11-16|**QuantileGS: Quantile-Based Conformal Bounds on RGB Rendering Errors for Novel View Synthesis with 3D Gaussian Splatting**|Haiyang Xu 외|[2611.21253](https://arxiv.org/abs/2611.21253)|-|
 |2026-11-16|**A Gaussian Primitive Data Management Framework for Efficient 3DGS Trajectory Rendering**|Haolun Ma 외|[2611.20546](https://arxiv.org/abs/2611.20546)|-|
@@ -25,19 +31,15 @@
 |2026-11-15|**SemLite-GS: Semantic-Selective Parallel Gaussian Splatting for Lightweight Building Reconstruction from UAV Oblique Imagery**|Tengfei Wang 외|[2611.19773](https://arxiv.org/abs/2611.19773)|[code](https://github.com/IRIS-LAB-whu/SemLite-GS)|
 |2026-11-14|**Prepare Lighter and Faster for Open-Vocabulary Queries: A Query-Wise 3D Segmenter for Gaussian Splatting**|Nhat-Quynh Le-Pham 외|[2611.19429](https://arxiv.org/abs/2611.19429)|-|
 |2026-11-13|**MacroGS: Macro-Pixel Shared Gaussian Primitives for Arbitrary-Scale Light Field Super-Resolutio**|Zeqiang Wei 외|[2611.17957](https://arxiv.org/abs/2611.17957)|-|
-|2026-11-13|**Stage-wise Lineage-aware Dropout for Sparse-View 3D Gaussian Splatting**|Yan Xing 외|[2611.17752](https://arxiv.org/abs/2611.17752)|-|
-|2026-11-12|**Kosmo-GFM: A Production-Ready Geometry Foundation Model**|Sheng Tang 외|[2611.16840](https://arxiv.org/abs/2611.16840)|[page](https://kosmoresearch.github.io/Kosmo-GFM/)|
-|2026-11-12|**Reconstruct What You Can: Distractor-free 4D Gaussian Splatting**|Joel Julin 외|[2611.16259](https://arxiv.org/abs/2611.16259)|-|
-|2026-11-11|**Topology-Aware 4D Gaussian Splatting for Egocentric Videos**|Leonardo Vanni 외|[2611.16012](https://arxiv.org/abs/2611.16012)|[page](https://topoego.github.io)|
-|2026-11-11|**ThermalSplat: Generalizable Pose-Free Gaussian Splatting for Sparse-View Thermal 3D Reconstruction**|Prasanna S 외|[2611.15435](https://arxiv.org/abs/2611.15435)|-|
-|2026-11-11|**MatrixSplat: Matrix-Parallel and Feature-Scalable 3D Gaussian Splatting Rendering on GPUs**|Yangming Zhang 외|[2611.15153](https://arxiv.org/abs/2611.15153)|-|
 
 ## Visual Localization
 
-최근 10편 · [전체 목록 →](lists/visual-localization/README.md)
+최근 12편 · [전체 목록 →](lists/visual-localization/README.md)
 
 |제출일|제목|저자|arXiv|코드|
 |---|---|---|---|---|
+|2026-11-17|**EfficientVPR: Toward Efficient Visual Place Recognition via Scene-Aware Prompt Tuning and Adaptive Feature Enhancement**|Wenjing Tang 외|[2611.22506](https://arxiv.org/abs/2611.22506)|[code](https://github.com/WiniTang/EfficientVPR)|
+|2026-11-16|**Beyond Appearance: Where Forest Visual Place Recognition Actually Fails**|Blake Matheson 외|[2611.21996](https://arxiv.org/abs/2611.21996)|-|
 |2026-11-06|**DAC-MACE: Context-Conditioned Expert Routing for Compact Scene Coordinate Regression in Camera Relocalization**|Dingying Fan 외|[2611.10263](https://arxiv.org/abs/2611.10263)|-|
 |2026-11-06|**CRTrack-Cap: A New Benchmark for Cross-View Dense Video Object Captioning**|Xiangqun Zhang 외|[2611.09617](https://arxiv.org/abs/2611.09617)|-|
 |2026-11-06|**MetricPose: Flexible 3D Human Pose Estimation with Depth and Geometric Cues**|Shifan Zhu 외|[2611.08954](https://arxiv.org/abs/2611.08954)|-|
@@ -55,6 +57,11 @@
 
 |제출일|제목|저자|arXiv|코드|
 |---|---|---|---|---|
+|2026-11-17|**Pressure Drop: Gravity Vector Estimation from a Distributed Barometric Pressure Sensor Array**|William Dubois 외|[2611.23120](https://arxiv.org/abs/2611.23120)|-|
+|2026-11-17|**Technical Report of Mobile Manipulator Robot for Industrial Environments**|Aria Dadnavi 외|[2611.22852](https://arxiv.org/abs/2611.22852)|-|
+|2026-11-17|**DGV-DLIVO: Degeneracy-Guided Visual Fusion for Direct LiDAR-Inertial-Visual Odometry in Degenerate Tunnel Environments**|Junrui Zhang|[2611.22385](https://arxiv.org/abs/2611.22385)|[code](https://github.com/0RayZhang0/DGV-DLIVO)|
+|2026-11-17|**CoSphere-SLAM: Multi-Agent Panoramic Gaussian Splatting SLAM with Spherical Loop Closure**|Qi Shao 외|[2611.22235](https://arxiv.org/abs/2611.22235)|[page](https://cosphere-slam.github.io)|
+|2026-11-17|**SE(3)-LIVOM: Adaptive Multi-LiDAR-Inertial-Visual Odometry and Mapping**|Gunhee Shin 외|[2611.22047](https://arxiv.org/abs/2611.22047)|[code](https://github.com/url-kaist/se3-livom-comfort)|
 |2026-11-16|**QuantileGS: Quantile-Based Conformal Bounds on RGB Rendering Errors for Novel View Synthesis with 3D Gaussian Splatting**|Haiyang Xu 외|[2611.21253](https://arxiv.org/abs/2611.21253)|-|
 |2026-11-16|**Polygraph: Large-Scale Multi-Session Trajectory Optimization using Pose Graphs**|Petar Lukovic 외|[2611.21163](https://arxiv.org/abs/2611.21163)|-|
 |2026-11-16|**WinDEX: Metric 3D Hand Motion Reconstruction in the Wild for Dexterous Teleoperation and Policy Learning**|Hongyu Ma 외|[2611.21143](https://arxiv.org/abs/2611.21143)|[page](https://fruitrabbit.github.io/WinDEX/)|
@@ -65,11 +72,6 @@
 |2026-11-14|**DEFDVO: Deformable Deep Visual Odometry for Equirectangular Images**|Burak Sevsay 외|[2611.19095](https://arxiv.org/abs/2611.19095)|[code](https://github.com/BurakSevsay/DEFDVO)|
 |2026-11-12|**RGB-D SLAM on the Edge: Benchmarking and Profiling RTAB-Map and ORB-SLAM3 on the Raspberry Pi 5**|Himanshu Patil 외|[2611.16472](https://arxiv.org/abs/2611.16472)|-|
 |2026-11-11|**IncR-3DSGG: Incremental Posed RGB Image Based 3D Scene Graph Generation via Privileged Depth Supervision**|Mrunmai Phatak 외|[2611.15429](https://arxiv.org/abs/2611.15429)|-|
-|2026-11-10|**NIF-VIO: Visual--Inertial Odometry Across Inertial and Non-Inertial Reference Frames**|Zichao Shu 외|[2611.13662](https://arxiv.org/abs/2611.13662)|-|
-|2026-11-10|**GEMOR-GS: Global Extrinsic-calibration-refined Mapping and Online Relocalization for 3D Gaussian-Splatting SLAM**|Yuchen Yang 외|[2611.13528](https://arxiv.org/abs/2611.13528)|-|
-|2026-11-09|**V3DSAM: Semantic-Geometric Loop Verification and Geometry-Anchored Persistent Instance Mapping for Feed-Forward Dense SLAM**|Maolin Ye 외|[2611.12452](https://arxiv.org/abs/2611.12452)|-|
-|2026-11-09|**DPGS-SLAM: Diffusion-Prior and Provenance-Aware Monocular Gaussian Splatting SLAM for Dynamic Visual Sensing**|Yifan Luo 외|[2611.12038](https://arxiv.org/abs/2611.12038)|-|
-|2026-11-09|**Scale-Consistent Monocular Fisheye Visual Odometry via Spherical Bundle Adjustment-Guided Unsupervised Depth Learning**|Wanhui Luo 외|[2611.11934](https://arxiv.org/abs/2611.11934)|-|
 
 ## Keypoint Detection
 
