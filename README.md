@@ -1,14 +1,14 @@
 # Jun-paper-tracker
 
-> 마지막 데이터 변경: 2026-11-19 20:26 (UTC+9) · arXiv 최신 논문을 매일 자동 수집합니다.
+> 마지막 데이터 변경: 2026-11-20 20:17 (UTC+9) · arXiv 최신 논문을 매일 자동 수집합니다.
 
 |주제|전체|최근 7일|코드 공개|
 |---|---:|---:|---:|
-|[3D Gaussian Splatting](#3d-gaussian-splatting)|79|26|11 (13%)|
+|[3D Gaussian Splatting](#3d-gaussian-splatting)|85|30|12 (14%)|
 |[Visual Localization](#visual-localization)|13|3|2 (15%)|
-|[SLAM](#slam)|38|16|6 (15%)|
+|[SLAM](#slam)|40|17|7 (17%)|
 |[Keypoint Detection](#keypoint-detection)|8|2|2 (25%)|
-|[Image Motion Target Tracking](#image-motion-target-tracking)|14|5|2 (14%)|
+|[Image Motion Target Tracking](#image-motion-target-tracking)|16|6|3 (18%)|
 
 ## 3D Gaussian Splatting
 
@@ -16,6 +16,12 @@
 
 |제출일|제목|저자|arXiv|코드|
 |---|---|---|---|---|
+|2026-11-19|**CryoGaussian: Heterogeneous Cryo-EM Reconstruction Made Explicit with Gaussian Splatting**|Ziwen Wang 외|[2611.26128](https://arxiv.org/abs/2611.26128)|-|
+|2026-11-19|**PaveSplat: Resolution-Robust Feed-Forward Gaussian Splatting with Residually Corrected Surface-Aligned Covariances**|Janghun Kim 외|[2611.26045](https://arxiv.org/abs/2611.26045)|[code](https://github.com/janghunn/pavesplat) [page](https://janghunn.github.io/pavesplat/)|
+|2026-11-19|**Multi-View Transformer with Geometry-Guided Multi-Modal ControlNet for 3D Virtual Try-On**|Sarthak Batra 외|[2611.25979](https://arxiv.org/abs/2611.25979)|-|
+|2026-11-19|**AGSR: Aperture-Guided Super-Resolution for Gaussian Splatting**|Ayman Alkhateeb 외|[2611.25934](https://arxiv.org/abs/2611.25934)|-|
+|2026-11-19|**Multi-View Relighting with Mergeable Radiance Fields**|Yinan Wang 외|[2611.25523](https://arxiv.org/abs/2611.25523)|-|
+|2026-11-19|**VideoRNG: Relightable Neural Gaussians from Generative Video Models**|Bowen Xue 외|[2611.25338](https://arxiv.org/abs/2611.25338)|-|
 |2026-11-18|**Multi-Band Galaxy Novel-View Synthesis with Radiative Gaussian Fields**|Yuzhe Wu 외|[2611.24723](https://arxiv.org/abs/2611.24723)|-|
 |2026-11-18|**RAPID: Reconstruction Accelerated by Polarization-Informed Depth for 2D Gaussian Splatting**|Daisong Ouyang 외|[2611.24404](https://arxiv.org/abs/2611.24404)|-|
 |2026-11-18|**Facet-SLAM: Real-Time Triangle Splatting SLAM**|Edward Beng Wai Tan 외|[2611.23935](https://arxiv.org/abs/2611.23935)|[code](https://github.com/edward62740/Facet-SLAM)|
@@ -25,12 +31,6 @@
 |2026-11-17|**Gaussian Splatoms: Direct Atomic Structure Identification in Electron Tomography**|Nalini Singh 외|[2611.23444](https://arxiv.org/abs/2611.23444)|-|
 |2026-11-17|**OCLDA-GS: Object-Centric Local Deformation-Aware Gaussian Streaming**|Ashim Dahal 외|[2611.23416](https://arxiv.org/abs/2611.23416)|-|
 |2026-11-17|**ReTouchGS: Ultralight Render-free Aesthetic Color Enhancement and Transfer for 3D Gaussian Splatting**|Chuanzhi Xu 외|[2611.23054](https://arxiv.org/abs/2611.23054)|-|
-|2026-11-17|**You Only Encode Once: Sub-Pixel-Shifted Frames for Arbitrary-Scale Remote Sensing Super-Resolution with 2D Gaussian Splatting**|Canjie Liu 외|[2611.22898](https://arxiv.org/abs/2611.22898)|-|
-|2026-11-17|**DOOM-GS: Dynamic Out-of-core Optimization for Massive Gaussian Splatting**|Doğa Yılmaz 외|[2611.22805](https://arxiv.org/abs/2611.22805)|-|
-|2026-11-17|**Cross3DGS: Unified Vulkan-Based 3D Gaussian Splatting Training from Workstations to Mobile Devices**|Hiroyuki Sato 외|[2611.22240](https://arxiv.org/abs/2611.22240)|-|
-|2026-11-17|**CoSphere-SLAM: Multi-Agent Panoramic Gaussian Splatting SLAM with Spherical Loop Closure**|Qi Shao 외|[2611.22235](https://arxiv.org/abs/2611.22235)|[page](https://cosphere-slam.github.io)|
-|2026-11-17|**CueSplat: Learning to Schedule Sparse Deformation for Dynamic Gaussian Splatting on Edge Devices**|Qingyuan Tang 외|[2611.22095](https://arxiv.org/abs/2611.22095)|-|
-|2026-11-16|**The Mask Is Not the Object: Volumetric Supervision for 3D Gaussian Segmentation**|Jeonghwan Cho 외|[2611.21383](https://arxiv.org/abs/2611.21383)|[code](https://github.com/jhxcho/voda) [page](https://jhxcho.github.io/voda/)|
 
 ## Visual Localization
 
@@ -58,6 +58,8 @@
 
 |제출일|제목|저자|arXiv|코드|
 |---|---|---|---|---|
+|2026-11-19|**Stereo Visual Odometry with In-the-Loop Geometric Feed-Forward Models Towards Dense Metric Mapping**|Fahira Afzal Maken 외|[2611.25445](https://arxiv.org/abs/2611.25445)|-|
+|2026-11-18|**Accord: Universal Online Metric Localization and Dense Mapping from one Camera and an IMU**|Jaafar Mahmoud 외|[2611.25279](https://arxiv.org/abs/2611.25279)|[code](https://github.com/be2rlab/ACCORD)|
 |2026-11-18|**Proprioceptive Simultaneous Base and Terrain Elevation Estimation for Legged Robot Locomotion**|Michael Maravgakis 외|[2611.24310](https://arxiv.org/abs/2611.24310)|-|
 |2026-11-18|**Facet-SLAM: Real-Time Triangle Splatting SLAM**|Edward Beng Wai Tan 외|[2611.23935](https://arxiv.org/abs/2611.23935)|[code](https://github.com/edward62740/Facet-SLAM)|
 |2026-11-17|**Pressure Drop: Gravity Vector Estimation from a Distributed Barometric Pressure Sensor Array**|William Dubois 외|[2611.23120](https://arxiv.org/abs/2611.23120)|-|
@@ -71,8 +73,6 @@
 |2026-11-16|**OrthoMark: Place Recognition with Point-Anchored Orthographic Height Mark**|Haichuan Li|[2611.20570](https://arxiv.org/abs/2611.20570)|-|
 |2026-11-16|**sqrtVINS-Based 360 Visual-Inertial SLAM Systems: Hilti-Trimble SLAM Challenge 2026 Entry**|Jungwoo Lee 외|[2611.20568](https://arxiv.org/abs/2611.20568)|-|
 |2026-11-15|**A Geometric Observer for Visual-Inertial Odometry using Optical-Flow Constraints**|Tarek Bouazza 외|[2611.20098](https://arxiv.org/abs/2611.20098)|-|
-|2026-11-15|**M-CROSS: A Multisensor Simulation Dataset for SLAM across Water--Land Transitions**|Yan Dong 외|[2611.19765](https://arxiv.org/abs/2611.19765)|-|
-|2026-11-14|**DEFDVO: Deformable Deep Visual Odometry for Equirectangular Images**|Burak Sevsay 외|[2611.19095](https://arxiv.org/abs/2611.19095)|[code](https://github.com/BurakSevsay/DEFDVO)|
 
 ## Keypoint Detection
 
@@ -91,10 +91,12 @@
 
 ## Image Motion Target Tracking
 
-최근 14편 · [전체 목록 →](lists/image-motion-target-tracking/README.md)
+최근 15편 · [전체 목록 →](lists/image-motion-target-tracking/README.md)
 
 |제출일|제목|저자|arXiv|코드|
 |---|---|---|---|---|
+|2026-11-19|**Tracking Objects Through Assembly and Decomposition**|Cheryl Lam 외|[2611.26269](https://arxiv.org/abs/2611.26269)|-|
+|2026-11-19|**DACA: Dual-Anchor Collaborative Agent for Zero-Shot 3D Visual Grounding**|Jiaming Liu 외|[2611.25722](https://arxiv.org/abs/2611.25722)|[code](https://github.com/liujia99/DACA)|
 |2026-11-18|**Freeforward4d: Annotation-free feed-forward 4d reconstruction of driving scenes**|Luosong Guo 외|[2611.24007](https://arxiv.org/abs/2611.24007)|-|
 |2026-11-16|**CLIFT: Contrastive LiDAR Instance Features for 3D Pedestrian Tracking**|German Devchich 외|[2611.20737](https://arxiv.org/abs/2611.20737)|[page](https://hermak56.github.io/CLIFT/)|
 |2026-11-16|**VisDrone-ReID: A Unified Multi-Category Object Re-Identification Benchmark**|Asmau Lawal Bilbis 외|[2611.20372](https://arxiv.org/abs/2611.20372)|-|
@@ -108,7 +110,6 @@
 |2026-11-04|**WayPOP: A Panoramic Open-Set Panoptic Tracking Benchmark**|Rohit Mohan 외|[2611.05801](https://arxiv.org/abs/2611.05801)|-|
 |2026-11-03|**Neuromorphic Camera for Multi-Target Pointing Acquisition and Tracking in Free Space Optical Communication**|Francesco Nardo 외|[2611.05503](https://arxiv.org/abs/2611.05503)|-|
 |2026-11-03|**TAQ-MOTR: Tracking-Aware Detection Query Formation for End-to-End Multiple Object Tracking**|Hanyang Liu 외|[2611.05205](https://arxiv.org/abs/2611.05205)|[code](https://github.com/Magicmiya/TAQ-MOTR)|
-|2026-11-02|**Latent Spectral Prompting for Multimodal Hyperspectral Object Tracking**|Wangshu Cai 외|[2611.02512](https://arxiv.org/abs/2611.02512)|-|
 
 ---
 
