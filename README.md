@@ -1,14 +1,14 @@
 # Jun-paper-tracker
 
-> 마지막 데이터 변경: 2026-11-20 20:17 (UTC+9) · arXiv 최신 논문을 매일 자동 수집합니다.
+> 마지막 데이터 변경: 2026-11-23 21:32 (UTC+9) · arXiv 최신 논문을 매일 자동 수집합니다.
 
 |주제|전체|최근 7일|코드 공개|
 |---|---:|---:|---:|
-|[3D Gaussian Splatting](#3d-gaussian-splatting)|85|27|12 (14%)|
+|[3D Gaussian Splatting](#3d-gaussian-splatting)|85|24|12 (14%)|
 |[Visual Localization](#visual-localization)|13|3|2 (15%)|
-|[SLAM](#slam)|40|16|7 (17%)|
-|[Keypoint Detection](#keypoint-detection)|8|1|2 (25%)|
-|[Image Motion Target Tracking](#image-motion-target-tracking)|16|6|3 (18%)|
+|[SLAM](#slam)|40|14|7 (17%)|
+|[Keypoint Detection](#keypoint-detection)|9|2|2 (22%)|
+|[Image Motion Target Tracking](#image-motion-target-tracking)|16|5|3 (18%)|
 
 ## 3D Gaussian Splatting
 
@@ -76,10 +76,11 @@
 
 ## Keypoint Detection
 
-최근 8편 · [전체 목록 →](lists/keypoint-detection/README.md)
+최근 9편 · [전체 목록 →](lists/keypoint-detection/README.md)
 
 |제출일|제목|저자|arXiv|코드|
 |---|---|---|---|---|
+|2026-11-20|**Which Dwarf Is This? Doppeldwarf-306 and Near-Identical Instance Retrieval**|Turhan Can Kargin|[2611.27490](https://arxiv.org/abs/2611.27490)|[page](https://turhancan97.github.io/doppeldwarf-306/)|
 |2026-11-18|**LightSEAD: Lightweight SE(3)-Aware Keypoint Detector through Selective Knowledge Distillation**|Mayowa Adebambo 외|[2611.23661](https://arxiv.org/abs/2611.23661)|-|
 |2026-11-13|**ALoMa: Affine Correspondences Beyond Patches**|David Nordström 외|[2611.18170](https://arxiv.org/abs/2611.18170)|[code](https://github.com/davnords/loma)|
 |2026-11-06|**DAC-MACE: Context-Conditioned Expert Routing for Compact Scene Coordinate Regression in Camera Relocalization**|Dingying Fan 외|[2611.10263](https://arxiv.org/abs/2611.10263)|-|
