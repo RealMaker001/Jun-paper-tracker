@@ -130,9 +130,25 @@ def find_links(text: str) -> tuple[str | None, str | None]:
 
 
 # ---------------------------------------------------------------- arXiv
+class RateLimited(RuntimeError):
+    """arXiv 가 요청 과다(429/503)로 계속 거절함."""
+
+
+def retry_after_seconds(err: urllib.error.HTTPError) -> float:
+    """Retry-After 헤더(초 단위 숫자)를 읽는다. 없거나 날짜 형식이면 0."""
+    try:
+        return float(err.headers.get("Retry-After", 0) or 0)
+    except (TypeError, ValueError):
+        return 0.0
+
+
 class ArxivClient:
-    def __init__(self, delay: float):
+    def __init__(self, delay: float, s: dict | None = None):
+        s = s or {}
         self.delay = delay
+        self.attempts = int(s.get("rate_limit_retries", 4))
+        self.limit_wait = float(s.get("rate_limit_wait_seconds", 60))
+        self.limit_max_wait = float(s.get("rate_limit_max_wait_seconds", 600))
         self._last = 0.0
 
     def _wait(self) -> None:
@@ -141,8 +157,9 @@ class ArxivClient:
             time.sleep(self.delay - gap)
         self._last = time.monotonic()
 
-    def page(self, params: dict, attempts: int = 4) -> tuple[list, int]:
+    def page(self, params: dict) -> tuple[list, int]:
         url = ARXIV_API + "?" + urllib.parse.urlencode(params)
+        attempts = self.attempts
         last_err: Exception | None = None
         for attempt in range(1, attempts + 1):
             self._wait()
@@ -156,11 +173,16 @@ class ArxivClient:
                 return entries, total
             except (urllib.error.URLError, TimeoutError, ET.ParseError, RuntimeError, ValueError) as e:
                 last_err = e
+                if attempt == attempts:
+                    break
                 wait = 10 * attempt
                 if isinstance(e, urllib.error.HTTPError) and e.code in (429, 503):
-                    wait = 30 * attempt
-                log.warning(f"arXiv 요청 실패 ({attempt}/{attempts}): {e} -> {wait}초 후 재시도")
+                    # arXiv 가 알려 준 대기 시간과 우리 대기 시간 중 긴 쪽을 지킨다
+                    wait = min(max(retry_after_seconds(e), self.limit_wait * attempt), self.limit_max_wait)
+                log.warning(f"arXiv 요청 실패 ({attempt}/{attempts}): {e} -> {wait:.0f}초 후 재시도")
                 time.sleep(wait)
+        if isinstance(last_err, urllib.error.HTTPError) and last_err.code in (429, 503):
+            raise RateLimited(f"arXiv 요청 과다 거절 (HTTP {last_err.code}), {attempts}회 시도")
         raise RuntimeError(f"arXiv 요청 최종 실패: {last_err}")
 
 
@@ -419,15 +441,24 @@ def main() -> int:
             raise SystemExit(f"없는 slug: {', '.join(sorted(unknown))}")
         topics = [t for t in topics if t["slug"] in args.topic]
 
+    rate_limited: list[str] = []  # arXiv 요청 과다로 못 한 주제 (실패가 아니라 '다음에 따라잡기')
     if not args.render_only:
-        client = ArxivClient(s["request_delay_seconds"])
+        client = ArxivClient(s["request_delay_seconds"], s)
         today = today_utc().isoformat()
         all_new: set = set()
         for t in topics:
+            if rate_limited:
+                # 이미 막혔으면 남은 주제로 arXiv 를 더 두드리지 않는다
+                rate_limited.append(t["name"])
+                continue
             cutoff = topic_cutoff(db, t["slug"], s, args.days)
             log.info(f"[{t['name']}] {cutoff} 이후 제출 논문 검색")
             try:
                 found = fetch_topic(client, t, cutoff, s)
+            except RateLimited as e:
+                rate_limited.append(t["name"])
+                log.warning(f"[{t['name']}] {e} -> 남은 주제는 건너뛰고 다음 실행 때 따라잡습니다")
+                continue
             except Exception as e:
                 failed.append(t["name"])
                 gh_annotation("error", f"[{t['name']}] 수집 실패: {e}")
@@ -438,14 +469,29 @@ def main() -> int:
         if not args.skip_code:
             refresh_code_links(db, all_new, s)
 
+    # 요청 과다로 막힌 날이 며칠 연속인지 기록 (막히지 않은 날 0으로 초기화)
+    old_streak = int(state.get("rate_limited_days", 0))
+    streak = old_streak + 1 if rate_limited else 0
+    state_changed = streak != old_streak
+    state["rate_limited_days"] = streak
+
     changed = json.dumps(db, sort_keys=True) != before
     if changed:
         state["last_change"] = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
         save_db(db)
+    if changed or state_changed:
         save_state(state)
     log.info("데이터 변경 있음" if changed else "데이터 변경 없음")
     render(db, cfg, state)
 
+    if rate_limited:
+        limit_days = int(s.get("rate_limit_fail_after_days", 3))
+        msg = (f"arXiv 요청 과다(429)로 {len(rate_limited)}개 주제를 건너뜀: {', '.join(rate_limited)} "
+               f"(연속 {streak}일째, 다음 실행 때 자동으로 따라잡습니다)")
+        if streak >= limit_days:
+            gh_annotation("error", msg + f" - {limit_days}일 연속이라 실패로 알립니다.")
+            return 1
+        gh_annotation("warning", msg)
     if failed and len(failed) == len(topics):
         log.error("모든 주제 수집 실패")
         return 1
