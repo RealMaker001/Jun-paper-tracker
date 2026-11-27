@@ -1,14 +1,14 @@
 # Jun-paper-tracker
 
-> 마지막 데이터 변경: 2026-11-26 21:11 (UTC+9) · arXiv 최신 논문을 매일 자동 수집합니다.
+> 마지막 데이터 변경: 2026-11-27 20:59 (UTC+9) · arXiv 최신 논문을 매일 자동 수집합니다.
 
 |주제|전체|최근 7일|코드 공개|
 |---|---:|---:|---:|
-|[3D Gaussian Splatting](#3d-gaussian-splatting)|126|46|16 (12%)|
+|[3D Gaussian Splatting](#3d-gaussian-splatting)|126|40|16 (12%)|
 |[Visual Localization](#visual-localization)|15|2|3 (20%)|
-|[SLAM](#slam)|56|17|11 (19%)|
-|[Keypoint Detection](#keypoint-detection)|11|3|3 (27%)|
-|[Image Motion Target Tracking](#image-motion-target-tracking)|30|16|7 (23%)|
+|[SLAM](#slam)|56|16|12 (21%)|
+|[Keypoint Detection](#keypoint-detection)|11|3|4 (36%)|
+|[Image Motion Target Tracking](#image-motion-target-tracking)|30|14|8 (26%)|
 
 ## 3D Gaussian Splatting
 
@@ -63,7 +63,7 @@
 |2026-11-25|**CADENCE: Sensor-GroundedWorld-Consistent Gaussian SLAM for Collaborative Mobile Reconstruction**|Reshad Ul Karim 외|[2611.34549](https://arxiv.org/abs/2611.34549)|-|
 |2026-11-25|**ProManO: Beyond Sim(3) for Metric Upgrade of Feed-Forward Geometry with Visual-Inertial Anchors**|Lingxiang Hu 외|[2611.34480](https://arxiv.org/abs/2611.34480)|[page](https://h0xg.github.io/ProManO/)|
 |2026-11-25|**End-to-End Image-Goal Navigation for Agile Quadrotors via Recurrent State Distillation**|Simone Nascivera 외|[2611.34046](https://arxiv.org/abs/2611.34046)|-|
-|2026-11-24|**SpatialArena: Where Do Geometric Foundation Models Stand?**|Yu Chen 외|[2611.32816](https://arxiv.org/abs/2611.32816)|-|
+|2026-11-24|**SpatialArena: Where Do Geometric Foundation Models Stand?**|Yu Chen 외|[2611.32816](https://arxiv.org/abs/2611.32816)|[code](https://github.com/mvp-ai-lab/SpatialArena)|
 |2026-11-24|**Seeing to Drive on a Single Board: Attention-Free Depth for Onboard Robot Navigation**|Itai Mizlish 외|[2611.32718](https://arxiv.org/abs/2611.32718)|[code](https://github.com/itaim18/DANIEL)|
 |2026-11-24|**AirLeg: A Robust and Accurate Self-Supervised Visual-Inertial-Leg SLAM System**|Kuan Xu 외|[2611.32523](https://arxiv.org/abs/2611.32523)|-|
 |2026-11-24|**ROVO: Robust Rotation-Only Visual Odometry for UAVs at Low and Moderate Altitudes**|Xiaokai Song 외|[2611.32475](https://arxiv.org/abs/2611.32475)|[code](https://github.com/sssxxxkkkk/ROVO)|
@@ -84,7 +84,7 @@
 |---|---|---|---|---|
 |2026-11-25|**Detectable by Design: Learning a Continuous 3D Saliency Field from 2D Detector Responses**|Han Sun 외|[2611.34108](https://arxiv.org/abs/2611.34108)|-|
 |2026-11-24|**Learning Agent States for Latent Action Modeling**|Shaoan Xie 외|[2611.32017](https://arxiv.org/abs/2611.32017)|[code](https://github.com/Mid-Push/Agent-State-LAM) [page](https://agent-state-lam.github.io)|
-|2026-11-20|**Which Dwarf Is This? Doppeldwarf-306 and Near-Identical Instance Retrieval**|Turhan Can Kargin|[2611.27490](https://arxiv.org/abs/2611.27490)|[page](https://turhancan97.github.io/doppeldwarf-306/)|
+|2026-11-20|**Which Dwarf Is This? Doppeldwarf-306 and Near-Identical Instance Retrieval**|Turhan Can Kargin|[2611.27490](https://arxiv.org/abs/2611.27490)|[code](https://github.com/turhancan97/doppeldwarf-306) [page](https://turhancan97.github.io/doppeldwarf-306/)|
 |2026-11-18|**LightSEAD: Lightweight SE(3)-Aware Keypoint Detector through Selective Knowledge Distillation**|Mayowa Adebambo 외|[2611.23661](https://arxiv.org/abs/2611.23661)|-|
 |2026-11-13|**ALoMa: Affine Correspondences Beyond Patches**|David Nordström 외|[2611.18170](https://arxiv.org/abs/2611.18170)|[code](https://github.com/davnords/loma)|
 |2026-11-06|**DAC-MACE: Context-Conditioned Expert Routing for Compact Scene Coordinate Regression in Camera Relocalization**|Dingying Fan 외|[2611.10263](https://arxiv.org/abs/2611.10263)|-|
@@ -112,7 +112,7 @@
 |2026-11-23|**DexDuet: Learning Contact-Preserving Bimanual Dexterity from Human Demonstrations**|Haoran Zhang 외|[2611.30495](https://arxiv.org/abs/2611.30495)|[code](https://github.com/HaoranZhangumich/DexDuet) [page](https://rcl-robotics.github.io/Dexduet.io/)|
 |2026-11-21|**Distributed Interactive Conformal Prediction for Multi-Agent Systems**|Daniel M. Cherenson 외|[2611.29037](https://arxiv.org/abs/2611.29037)|-|
 |2026-11-21|**WorldWeave: Rethinking Embodied Navigation through Cross-Task World Modeling**|Xuan Yao 외|[2611.28553](https://arxiv.org/abs/2611.28553)|-|
-|2026-11-20|**Taking Apart and Putting Together: Tracking Objects Through Physical Transformations**|Davide Gardenal 외|[2611.27398](https://arxiv.org/abs/2611.27398)|[page](https://davidegardenal.github.io/tipo-tracking)|
+|2026-11-20|**Taking Apart and Putting Together: Tracking Objects Through Physical Transformations**|Davide Gardenal 외|[2611.27398](https://arxiv.org/abs/2611.27398)|[code](https://github.com/davidegardenal/TIPO) [page](https://davidegardenal.github.io/tipo-tracking)|
 |2026-11-20|**PanoUAV-Track: Full-Spherical UAV Visual Tracking in the Wild**|Bingyu Li 외|[2611.27383](https://arxiv.org/abs/2611.27383)|[page](https://libingyu01.github.io/PanoUAV-Track/)|
 |2026-11-19|**Tracking Objects Through Assembly and Decomposition**|Cheryl Lam 외|[2611.26269](https://arxiv.org/abs/2611.26269)|-|
 
