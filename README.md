@@ -4,11 +4,11 @@
 
 |주제|전체|최근 7일|코드 공개|
 |---|---:|---:|---:|
-|[3D Gaussian Splatting](#3d-gaussian-splatting)|126|40|16 (12%)|
+|[3D Gaussian Splatting](#3d-gaussian-splatting)|126|37|16 (12%)|
 |[Visual Localization](#visual-localization)|15|2|3 (20%)|
-|[SLAM](#slam)|56|16|12 (21%)|
-|[Keypoint Detection](#keypoint-detection)|11|3|4 (36%)|
-|[Image Motion Target Tracking](#image-motion-target-tracking)|30|14|8 (26%)|
+|[SLAM](#slam)|56|12|12 (21%)|
+|[Keypoint Detection](#keypoint-detection)|11|2|4 (36%)|
+|[Image Motion Target Tracking](#image-motion-target-tracking)|30|12|8 (26%)|
 
 ## 3D Gaussian Splatting
 
